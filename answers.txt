@@ -1,4 +1,15 @@
+Aufgabe 1:
 1. Der topographische Feuchtigkeitsindex (Topographic Wetness Index, TWI) ist ein konzeptionelles Modell, welches dabei helfen soll, Flächen ausfindig zu machen, die besonders von Sturzfluten gefährdet sein können (Pourall et al. 2014). Hierzu wird mit dem TWI, der aus dem hydrologischen Modell TOPMODEL (Beven & Kirby, 1979) stammt, die Fließakkumulation eines Reliefs mit der Hangneigung gewichtet. Die Fließakkumulation beschreibt, auf ein Rastermodell bezogen, die Anzahl der Zellen, die in eine Zelle hineinfließen, und wird als Einzugsgebiet bezeichnet (Pourall et al. 2014).
 Die grundlegende Formel, die zur Berechnung des TWI entwickelt wurde lautet W = ln(a/tan b), wobei W für den TWI steht, a das hangaufwärtsbefindliche Einzugsgebiet darstellt, welches durch die Außenlinie und den Pfad der Flut dividiert wird. Tangens b bestimmt die steilste hangabwärtsgerichtete Richtung (Beven & Kirby 1979). Im Laufe der Zeit wurde der Algorithmus mehrfach angepasst, so dass heutzutage etliche Berechnungsmethoden des TWI existieren (vgl. Pourall et al. 2014).
 
-2. Der Wert des TWI korreliert positiv mit der Überschwemungswahrscheinlichkeit, denn er zeigt die Tendenz einer Rasterzelle zum Oberflächenabfluss, und steht in einem engen Zusammenhang mit der Feuchte eines Bodens. Je höher der Wert des TWI, desto höher die Bodenfeuchte (Pourall et al. 2014).
+2. Der Wert des TWI korreliert positiv mit der Überschwemmungswahrscheinlichkeit, denn er zeigt die Tendenz einer Rasterzelle zum Oberflächenabfluss, und steht in einem engen Zusammenhang mit der Feuchte eines Bodens. Je höher der Wert des TWI, desto höher die Bodenfeuchte (Pourall et al. 2014).
+
+Aufgabe 2:
+a) TWI-tools in verschiedenen FOSSGIS:
+- GRASSGIS: r.topidx tool; r.watershed tool; r.terraflow tool
+- Whitebox GAT: Wetness Index
+- SAGA GIS: Topographic Wetness Index (auch mit QGIS zugänglich), Topographic Wetness Index (one step)
+ 
+b) Packages für TWI in Python und R:
+- Python: pyDEM
+- R: dynatopmodel
